@@ -25,8 +25,6 @@ body.menu-open {
     margin: 0 auto;
     padding: 0 15px;
 }
-
-/* الهيدر العلوي */
 .top-header {
     background: #fff;
     padding: 10px 0;
@@ -132,8 +130,6 @@ body.menu-open {
     text-decoration: none;
     font-weight: bold;
 }
-
-/* الموبايل */
 @media (max-width: 992px) {
     .desktop-nav { display: none; }
     .menu-btn {
@@ -154,7 +150,6 @@ body.menu-open {
     z-index: 9998;
 }
 .overlay.show { display: block; }
-/* كود إخفاء المنيو والزرار في الكمبيوتر نهائياً */
 @media (min-width: 993px) {
     .side-menu, 
     .overlay, 
@@ -164,7 +159,6 @@ body.menu-open {
         pointer-events: none !important;
     }
 }
-/* تنسيق سكشن رقم التواصل (مطابق للصورة تماماً) */
 .contact-banner-area {
     padding: 30px 0;
     text-align: center;
@@ -197,7 +191,7 @@ body.menu-open {
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: 5px; /* وضع الأيقونة داخل الدائرة البيضاء في اليمين */
+    right: 5px;
 }
 
 .phone-icon-wrap i {
@@ -209,11 +203,9 @@ body.menu-open {
     color: #fff;
     font-size: 32px;
     font-weight: bold;
-    padding-right: 20px; /* مسافة للأيقونة */
+    padding-right: 20px;
     letter-spacing: 1px;
 }
-
-/* عنوان الخدمات */
 .main-services-title {
     text-align: center;
     margin-bottom: 40px;
@@ -231,11 +223,9 @@ body.menu-open {
     background: #f16522;
     margin: 0 auto;
 }
-
-/* شبكة الخدمات (الـ 24 خدمة) */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 في الصف للكمبيوتر */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 25px;
     padding-bottom: 60px;
 }
@@ -297,29 +287,26 @@ body.menu-open {
     color: #777;
     line-height: 1.8;
 }
-
-/* تعديلات الموبايل والتابلت */
 @media (max-width: 992px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 في الصف للتابلت */
+        grid-template-columns: repeat(2, 1fr);
     }
     .phone-text-wrap { font-size: 24px; }
 }
 
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* خدمة واحدة في الصف للموبايل */
+        grid-template-columns: 1fr; 
     }
     .phone-text-wrap { font-size: 18px; }
     .styled-contact-card { padding: 8px 40px; }
     .phone-icon-wrap { width: 40px; height: 40px; }
     .phone-icon-wrap i { font-size: 18px; }
 }
-/* --- الأزرار العائمة --- */
 .floating-contact {
     position: fixed;
     bottom: 25px;
-    left: 25px; /* وضع الأزرار جهة اليسار */
+    left: 25px; 
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -338,33 +325,24 @@ body.menu-open {
     text-decoration: none;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     transition: 0.3s;
-    animation: pulse 2s infinite; /* أنيميشن النبض */
+    animation: pulse 2s infinite; 
 }
-
-/* زر الاتصال */
 .call-float {
-    background-color: #f16522; /* برتقالي */
+    background-color: #f16522; 
 }
-
-/* زر الواتساب */
 .whatsapp-float {
-    background-color: #25d366; /* أخضر الواتساب */
+    background-color: #25d366;
 }
-
 .float-btn:hover {
     transform: scale(1.1) rotate(10deg);
 }
-
-/* تأثير النبض */
 @keyframes pulse {
     0% { box-shadow: 0 0 0 0 rgba(241, 101, 34, 0.7); }
     70% { box-shadow: 0 0 0 15px rgba(241, 101, 34, 0); }
     100% { box-shadow: 0 0 0 0 rgba(241, 101, 34, 0); }
 }
-
-/* --- الفوتر --- */
 .site-footer {
-    background-color: #343a5e; /* كحلي */
+    background-color: #343a5e; 
     color: #fff;
     padding: 60px 0 0;
     margin-top: 50px;
@@ -380,7 +358,7 @@ body.menu-open {
 .footer-column h3 {
     font-size: 22px;
     margin-bottom: 25px;
-    color: #f16522; /* برتقالي */
+    color: #f16522;
     position: relative;
     padding-bottom: 10px;
 }
@@ -422,44 +400,36 @@ body.menu-open {
     text-decoration: none;
     transition: 0.3s;
 }
-
 .quick-links ul li a i {
     font-size: 12px;
     margin-left: 8px;
     color: #f16522;
 }
-
 .quick-links ul li a:hover {
     color: #f16522;
     padding-right: 10px;
 }
-
 .contact-item {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 20px;
 }
-
 .contact-item i {
     color: #f16522;
     font-size: 18px;
 }
-
 .contact-item a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
 }
-
-/* الموبايل */
 @media (max-width: 992px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
 }
-
 @media (max-width: 768px) {
     .footer-grid {
         grid-template-columns: 1fr;
@@ -478,34 +448,29 @@ body.menu-open {
         font-size: 22px;
     }
 }
-/* تنسيق حقوق الملكية والمبرمج */
 .footer-bottom {
-    background-color: #2a2f4d; /* لون أغمق قليلاً من الفوتر */
+    background-color: #2a2f4d; 
     padding: 20px 0;
     text-align: center;
     border-top: 1px solid rgba(255,255,255,0.1);
 }
-
 .footer-bottom p {
     font-size: 14px;
     color: #aaa;
-    margin: 5px 0; /* مسافة بين السطرين */
+    margin: 5px 0; 
 }
-
 .gmt-credits a {
-    color: #f16522; /* اللون البرتقالي الأساسي للموقع */
+    color: #f16522;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s ease;
 }
-
 .gmt-credits a:hover {
-    color: #fff; /* يتغير للأبيض عند الوقوف عليه */
+    color: #fff; 
     text-decoration: underline;
 }
-/* تنسيق سطر (خدمة سريعة وأسعار مناسبة) */
 .info-highlight-bar {
-    background-color: #f16522; /* برتقالي زي الروح العامة */
+    background-color: #f16522; 
     color: #fff;
     text-align: center;
     padding: 15px 0;
@@ -518,8 +483,6 @@ body.menu-open {
     font-weight: bold;
     margin: 0;
 }
-
-/* تنسيق منطقة صورة الخدمة والمحتوى */
 .service-details-content {
     padding-bottom: 50px;
 }
@@ -531,13 +494,11 @@ body.menu-open {
     margin-bottom: 30px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-
 .main-service-image img {
     width: 100%;
     height: auto;
     display: block;
 }
-
 .service-text-area h1 {
     color: #343a5e;
     font-size: 30px;
@@ -552,55 +513,46 @@ body.menu-open {
     color: #555;
     text-align: justify;
 }
-
-/* للموبايل */
 @media (max-width: 768px) {
     .info-highlight-bar h3 { font-size: 18px; }
     .service-text-area h1 { font-size: 24px; }
 }
-/* --- حل مشكلة الفوتر (يجبره ينزل تحت) --- */
 html, body {
     height: 100%;
     margin: 0;
 }
-
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* يخلي الصفحة بطول الشاشة على الأقل */
+    min-height: 100vh; 
 }
-
 #header-placeholder {
     width: 100%;
 }
-
 main {
-    flex: 1; /* ده السر! بيخلي المحتوى يملأ الفراغ ويزق الفوتر لتحت */
+    flex: 1; 
     padding-top: 20px;
 }
 
 #footer-placeholder {
     width: 100%;
 }
-
-/* --- ستايل الجملة المتحركة (الإصدار العبقري) --- */
 .promo-box-container {
     text-align: center;
     margin: 25px auto;
     padding: 0 15px;
     width: 100%;
 }
-
 .animated-promo-frame {
     display: inline-block;
-    background: #343a5e; /* كحلي */
+    background: #343a5e; 
     padding: 18px 60px;
-    border: 3px solid #f16522; /* برتقالي */
+    border: 3px solid #f16522; 
     border-radius: 12px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    animation: floating-frame 3s ease-in-out infinite; /* حركة عائمة */
+    animation: floating-frame 3s ease-in-out infinite; 
 }
 
 .animated-promo-frame h3 {
@@ -612,8 +564,6 @@ main {
     z-index: 5;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
-
-/* تأثير اللمعة اللي بتجري */
 .shine-effect {
     position: absolute;
     top: 0;
@@ -630,31 +580,24 @@ main {
     animation: shine-logic 4s infinite;
     z-index: 1;
 }
-
-/* أنيميشن اللمعة */
 @keyframes shine-logic {
     0% { left: -100%; }
     25% { left: 100%; }
     100% { left: 100%; }
 }
-
-/* أنيميشن العوم */
 @keyframes floating-frame {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-12px); }
 }
-
-/* للموبايل */
 @media (max-width: 768px) {
     .animated-promo-frame { padding: 12px 30px; }
     .animated-promo-frame h3 { font-size: 18px; }
 }
-/* --- ستايل الفوتر الفخم --- */
 .main-footer {
-    background-color: #1a1e36; /* كحلي غامق جداً للفخامة */
+    background-color: #1a1e36; 
     color: #fff;
     padding: 70px 0 0;
-    margin-top: auto; /* يضمن بقاء الفوتر أسفل الصفحة */
+    margin-top: auto; 
     border-top: 4px solid #f16522;
     direction: rtl;
 }
@@ -665,8 +608,6 @@ main {
     gap: 50px;
     padding-bottom: 50px;
 }
-
-/* عمود "من نحن" */
 .footer-logo img {
     max-height: 80px;
     background: #fff;
@@ -704,8 +645,6 @@ main {
     background: #f16522;
     transform: translateY(-5px);
 }
-
-/* عمود الروابط */
 .footer-col h3 {
     color: #f16522;
     font-size: 22px;
@@ -745,8 +684,6 @@ main {
     color: #f16522;
     padding-right: 10px;
 }
-
-/* عمود التواصل */
 .contact-box {
     display: flex;
     flex-direction: column;
@@ -778,8 +715,6 @@ main {
     font-weight: bold;
     margin-top: 5px;
 }
-
-/* الشريط السفلي */
 .footer-bottom {
     background: #111424;
     padding: 20px 0;
@@ -802,8 +737,6 @@ main {
     text-decoration: none;
     font-weight: bold;
 }
-
-/* ريسبونسيف الموبايل */
 @media (max-width: 992px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
@@ -828,7 +761,6 @@ main {
         gap: 10px;
     }
 }
-/* تنسيقات صفحة الخدمة والمقال */
 .service-page-wrapper {
     padding: 40px 0;
     background-color: #fcfcfc;
@@ -1037,7 +969,6 @@ main {
 @media (max-width: 768px) {
     .type-container { grid-template-columns: 1fr; }
 }
-/* تنسيقات إضافية لخدمة شراء السكراب */
 .highlight-border {
     border: 2px solid #343a5e;
     padding: 20px;
@@ -1145,7 +1076,6 @@ main {
     .split-boxes, .footer-btns { flex-direction: column; }
     .btn-main, .btn-wa { font-size: 16px; }
 }
-/* تنسيقات إضافية لخدمة مقاول الكهرباء */
 .advice-box {
     background: #fff9f5;
     border: 2px dashed #f16522;
